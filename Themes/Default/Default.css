@@ -1,0 +1,421 @@
+/*
+ * NtUI.css
+ * NtUI Framework CSS
+ *
+ * Developed by Nataniel López @ 9/15/17
+ * Copyright (c) 2017 Nataniel López & Nt-Systems
+ */
+
+ @import url('Default-settings.css');
+ @import url('Default-extensions.css');
+
+ /* body */
+
+ body{
+ 	top: 0px;
+ 	left: 0px;
+ 	padding: 0px;
+ 	margin: 0px;
+ }
+
+ /* window */
+
+ .ntui-ui-components-window {
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	width: 100%;
+ 	height: 100%;
+ 	font-size: 14px;
+ 	cursor: default;
+ 	-webkit-user-select: none;
+ 	-moz-user-select: none;
+ 	-ms-user-select: none;
+ 	user-select: none;
+ 	-webkit-transition: opacity 0.25s, filter 0.25s;
+ 	-moz-transition: opacity 0.25s, filter 0.25s;
+ 	-ms-transition: opacity 0.25s, filter 0.25s;
+ 	transition: opacity 0.25s, filter 0.25s;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ }
+
+ .ntui-ui-components-window button {
+ 	display: inline-block;
+ 	padding: 8px 24px 7px 24px;
+ 	border-radius: 2px;
+ 	border: none;
+ 	margin: 0px 5px 0px 5px;
+ 	color: #FFFFFF;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	font-weight: 500;
+ 	outline: none;
+ 	cursor: default;
+ 	overflow-wrap: break-word;
+ 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ 	-webkit-transition: box-shadow 0.25s, filter 0.25s;
+ 	-moz-transition: box-shadow 0.25s, filter 0.25s;
+ 	-ms-transition: box-shadow 0.25s, filter 0.25s;
+ 	transition: background 0.25s, box-shadow 0.25s, filter 0.25s;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ 	background: var(--color-accent);
+ }
+
+ .ntui-ui-components-window button:active {
+ 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+ 	-webkit-filter: brightness(90%);
+ 	-moz-filter: brightness(90%);
+ 	-ms-filter: brightness(90%);
+ 	filter: brightness(90%);
+ }
+
+ .ntui-ui-components-window input[type="button"] {
+ 	display: inline-block;
+ 	padding: 8px 24px 7px 24px;
+ 	border-radius: 2px;
+ 	border: none;
+ 	margin: 0px 5px 0px 5px;
+ 	color: #FFFFFF;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	font-weight: 500;
+ 	outline: none;
+ 	cursor: default;
+ 	overflow-wrap: break-word;
+ 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ 	-webkit-transition: box-shadow 0.25s, filter 0.25s;
+ 	-moz-transition: box-shadow 0.25s, filter 0.25s;
+ 	-ms-transition: box-shadow 0.25s, filter 0.25s;
+ 	transition: background 0.25s, box-shadow 0.25s, filter 0.25s;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ 	background: var(--color-accent);
+ }
+
+ .ntui-ui-components-window input[type="button"]:active {
+ 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+ 	-webkit-filter: brightness(90%);
+ 	-moz-filter: brightness(90%);
+ 	-ms-filter: brightness(90%);
+ 	filter: brightness(90%);
+ }
+
+ .ntui-ui-components-window input[type="submit"] {
+ 	display: inline-block;
+ 	padding: 8px 24px 7px 24px;
+ 	border-radius: 2px;
+ 	border: none;
+ 	margin: 0px 5px 0px 5px;
+ 	color: #FFFFFF;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	font-weight: 500;
+ 	outline: none;
+ 	cursor: default;
+ 	overflow-wrap: break-word;
+ 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ 	-webkit-transition: box-shadow 0.25s, filter 0.25s;
+ 	-moz-transition: box-shadow 0.25s, filter 0.25s;
+ 	-ms-transition: box-shadow 0.25s, filter 0.25s;
+ 	transition: background 0.25s, box-shadow 0.25s, filter 0.25s;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ 	background: var(--color-accent);
+ }
+
+ .ntui-ui-components-window input[type="submit"]:active {
+ 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+ 	-webkit-filter: brightness(90%);
+ 	-moz-filter: brightness(90%);
+ 	-ms-filter: brightness(90%);
+ 	filter: brightness(90%);
+ }
+
+ .ntui-ui-components-window input[type="reset"] {
+ 	display: inline-block;
+ 	padding: 8px 24px 7px 24px;
+ 	border-radius: 2px;
+ 	border: none;
+ 	margin: 0px 5px 0px 5px;
+ 	color: #FFFFFF;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	font-weight: 500;
+ 	outline: none;
+ 	cursor: default;
+ 	overflow-wrap: break-word;
+ 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ 	-webkit-transition: box-shadow 0.25s, filter 0.25s;
+ 	-moz-transition: box-shadow 0.25s, filter 0.25s;
+ 	-ms-transition: box-shadow 0.25s, filter 0.25s;
+ 	transition: background 0.25s, box-shadow 0.25s, filter 0.25s;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ 	background: var(--color-accent);
+ }
+
+ .ntui-ui-components-window input[type="reset"]:active {
+ 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+ 	-webkit-filter: brightness(90%);
+ 	-moz-filter: brightness(90%);
+ 	-ms-filter: brightness(90%);
+ 	filter: brightness(90%);
+ }
+
+ .ntui-ui-components-window input[type="text"] {
+ 	display: inline-block;
+ 	background: none;
+ 	border: none;
+ 	outline: none;
+ 	border-bottom: 1px solid #6A6A6A;
+ 	border-radius: 0px;
+ 	padding: 0px 0px 7px 0px;
+ 	margin: 0px 5px 0px 5px;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ }
+
+ .ntui-ui-components-window input[type="text"]:focus {
+ 	border-bottom: 2px solid var(--color-accent);
+ }
+
+ .ntui-ui-components-window input[type="email"] {
+ 	display: inline-block;
+ 	background: none;
+ 	border: none;
+ 	outline: none;
+ 	border-bottom: 1px solid #6A6A6A;
+ 	border-radius: 0px;
+ 	padding: 0px 0px 7px 0px;
+ 	margin: 0px 5px 0px 5px;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ }
+
+ .ntui-ui-components-window input[type="email"]:focus {
+ 	border-bottom: 2px solid var(--color-accent);
+ }
+
+ .ntui-ui-components-window input[type="number"] {
+ 	display: inline-block;
+ 	background: none;
+ 	border: none;
+ 	outline: none;
+ 	border-bottom: 1px solid #6A6A6A;
+ 	border-radius: 0px;
+ 	padding: 0px 0px 7px 0px;
+ 	margin: 0px 5px 0px 5px;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ }
+
+ .ntui-ui-components-window input[type="number"]:focus {
+ 	border-bottom: 2px solid var(--color-accent);
+ }
+
+ .ntui-ui-components-window input[type="password"] {
+ 	display: inline-block;
+ 	background: none;
+ 	border: none;
+ 	outline: none;
+ 	border-bottom: 1px solid #6A6A6A;
+ 	border-radius: 0px;
+ 	padding: 0px 0px 7px 0px;
+ 	margin: 0px 5px 0px 5px;
+ 	font-family: var(--font-pagecontent), sans-serif;
+ }
+
+ .ntui-ui-components-window input[type="password"]:focus {
+ 	border-bottom: 2px solid var(--color-accent);
+ }
+
+ .ntui-ui-components-window a {
+ 	color: var(--color-accent);
+ }
+
+
+ /* headerBar */
+
+ .ntui-ui-components-headerbar {
+ 	position: fixed;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	padding: var(--padding-headerbar);
+ 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+ 	font-size: 18px;
+ 	font-weight: 500;
+ 	color: #FFFFFF;
+ 	z-index: 998;
+ 	font-family: var(--font-headerbar), sans-serif;
+ 	background: var(--color-primary);
+ }
+
+
+ /* mainMenu */
+
+ .ntui-ui-components-mainmenu {
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	color: #FFFFFF;
+ 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+ 	text-align: center;
+ 	padding: var(--padding-mainmenu);
+ 	background: var(--color-primary-dark);
+ 	-webkit-transition: top 0.25s;
+ 	-moz-transition: top 0.25s;
+ 	-ms-transition: top 0.25s;
+ 	transition: top 0.25s;
+ }
+
+
+ /* menuItem */
+
+ .ntui-ui-components-mainmenu a {
+ 	display: inline-block;
+ 	width: 128px;
+ 	max-width: 128px;
+ 	padding: 14px 0px 12px 0px;
+ 	background: none;
+ 	color: #FFFFFF;
+ 	font-weight: 500;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	cursor: default;
+ 	border-bottom: 4px solid rgba(255, 255, 255, 0);
+ 	-webkit-transition: border-color 0.25s, background 0.25s;
+ 	-moz-transition: border-color 0.25s, background 0.25s;
+ 	-ms-transition: border-color 0.25s, background 0.25s;
+ 	transition: border-color 0.25s, background 0.25s;
+ 	font-family: var(--font-mainmenu), sans-serif;
+ }
+
+ .ntui-ui-components-mainmenu a:hover {
+ 	border-color: #FFFFFF;
+ }
+
+ .ntui-ui-components-mainmenu a:active {
+ 	background: rgba(243, 243, 243, 0.50);
+ }
+
+ .ntui-ui-components-mainmenu a[state="active"] {
+ 	border-bottom: 4px solid #FFFFFF;
+ }
+
+
+ /* pageContent */
+
+ .ntui-ui-components-pagecontent {
+ 	top: 0px;
+ 	left: 0px;
+ 	padding: var(--padding-pagecontent);
+ 	font-family: var(--font-pagecontent), sans-serif;
+ }
+
+ .ntui-ui-components-pagecontent a {
+ 	color: var(--color-primary);
+ }
+
+
+ /* pageFooter */
+
+ .ntui-ui-components-pagefooter {
+ 	bottom: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	padding: var(--padding-pagefooter);
+ 	background: #F2F2F2;
+ 	color: #757575;
+ 	text-align: center;
+ 	font-weight: 500;
+ 	font-family: var(--font-pagefooter), sans-serif;
+ }
+
+
+ /* dialogs */
+
+ .ntui-ui-components-dialogs-dim {
+ 	position: fixed;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	height: 100%;
+	background: rgba(0, 0, 0, 0.50);
+	z-index: 999;
+ }
+
+ .ntui-ui-components-dialogs-prompt {
+ 	position: fixed;
+ 	top: 50%;
+ 	background: #FFFFFF;
+ 	border-radius: 3px;
+ 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+	font-family: var(--font-pagecontent), sans-serif;
+	z-index: 1000;
+ }
+
+ .ntui-ui-components-dialogs-title {
+ 	padding: 16px;
+ 	font-size: 18px;
+ 	font-weight: 500;
+ }
+
+ .ntui-ui-components-dialogs-msg {
+ 	padding: 16px;
+ 	overflow-y: auto;
+ }
+
+ .ntui-ui-components-dialogs-button {
+ 	display: inline-block;
+ 	max-width: 128px;
+ 	margin: 16px;
+ 	padding: 12px 8px 11px 8px;
+ 	border: none;
+ 	border-radius: 2px;
+ 	background: none;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	font-weight: 500;
+ 	-webkit-transition: background 0.25s;
+ 	-moz-transition: background 0.25s;
+ 	-ms-transition: background 0.25s;
+ 	transition: background 0.25s;
+ 	cursor: default;
+ 	color: var(--color-accent);
+ 	font-family: var(--font-pagecontent), sans-serif;
+ }
+
+ .ntui-ui-components-dialogs-button:active {
+ 	background: #F3F3F3;
+ }
+
+
+ /* Settings */
+
+ .ntui-ui-color-primary-dark {
+ 	color: var(--color-primary-dark);
+ }
+
+ .ntui-ui-color-primary {
+ 	color: var(--color-primary);
+ }
+
+ .ntui-ui-color-accent {
+ 	color: var(--color-accent);
+ }
+
+ .ntui-ui-background-primary-dark {
+ 	background: var(--color-primary-dark);
+ }
+
+ .ntui-ui-background-primary {
+ 	background: var(--color-primary);
+ }
+
+ .ntui-ui-background-accent {
+ 	background: var(--color-accent);
+ }

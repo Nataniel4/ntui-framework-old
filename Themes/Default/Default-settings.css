@@ -1,0 +1,19 @@
+ .ntui-ui-components-window {
+
+ 	/* Default theme colors */
+ 	--color-primary: #673AB7;
+ 	--color-primary-dark: #4527A0;
+ 	--color-accent: #E91E63;
+
+ 	/* Default theme fonts */
+ 	--font-headerbar: 'Roboto';
+ 	--font-mainmenu: 'Roboto';
+ 	--font-pagecontent: 'Roboto';
+ 	--font-pagefooter: 'Roboto';
+
+ 	/* Default theme settings */
+    --padding-headerbar: 24px 0px 24px 0px;
+    --padding-mainmenu: 3px 0px 0px 0px;
+    --padding-pagecontent: 16px;
+    --padding-pagefooter: 16px 0px 16px 0px;
+ }
