@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>NtUI</title>
+	<script src="NtUI.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<style>
+.code-box {
+	font-family: 'Roboto Mono', monospace;
+	background: #F0F0F0;
+	color: #212121;
+	padding: 16px;
+	border-radius: 3px;
+	margin: 10px 0px 10px 0px;
+	cursor: text;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+</style>
+
+<body style="opacity:0;">
+	<headerBar>
+		<span style="padding-left: 16px;">NtUI Framework ${ntui.version}</span>
+	</headerBar>
+	<mainMenu>
+		<menuItem state="auto" onclick="ntui.ui.dialogs.prompt('NtUI Framework version ${ntui.version} build ${ntui.build}<br>Developed by Nataniel López.<br><br>Copyright © 2017 Nataniel López & Nt-Systems.','About');"> About
+		</menuItem>
+	</mainMenu>
+	<pageContent>
+		<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Information</span>
+		<br>
+		<br> NtUI version: ${ntui.version + ' build ' + ntui.build}
+		<br> Platform (auto detected): ${ntui.platform}
+		<br>
+		<br>
+		<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Documentation</span>
+		<br>
+		<br>
+		<br>
+		<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">HTML (Quick Start)</span>
+		<br>
+		<div class="code-box">
+			<span class="ntui-ui-color-primary-dark"><<span>!DOCTYPE html></span></span>
+			<br>
+			<span class="ntui-ui-color-primary"><span><</span>html<span>></span></span>
+			<div style="padding-left: 24px;">
+				<span class="ntui-ui-color-primary"><span><</span>head<span>></span></span>
+				<br>
+				<div style="padding-left: 24px;">
+					<span class="ntui-ui-color-primary"><<span>meta</span></span> charset=<span class="ntui-ui-color-accent">"UTF-8"</span>
+					<span class="ntui-ui-color-primary">></span>
+					<br>
+					<span class="ntui-ui-color-primary"><span><</span>title></span>NtUI Project<span class="ntui-ui-color-primary"><span><</span>/title></span>
+					<br>
+					<span class="ntui-ui-color-primary"><span><</span>script</span> src=<span class="ntui-ui-color-accent">"NtUI.js"</span>
+					<span class="ntui-ui-color-primary">>
+						<</span><span class="ntui-ui-color-primary">/script></span>
+					</div>
+					<span class="ntui-ui-color-primary"><span><</span>/head<span>></span></span>
+					<br>
+					<span class="ntui-ui-color-primary"><span><</span>body<span>></span></span>
+					<br>
+					<div style="padding-left: 24px;">
+						<span class="ntui-ui-color-primary"><span><</span>headerBar<span>></span></span>
+						<br>
+						<span style="padding-left: 24px;"><span class="ntui-ui-color-primary"><</span><span class="ntui-ui-color-primary">span</span> style=<span class=ntui-ui-color-accent>"padding-left:var(--padding-pagecontent);"</span><span class="ntui-ui-color-primary">></span><span>$</span>{SITE_TITLE}
+						<span class="ntui-ui-color-primary-dark">(document.title by default)</span></span><span class="ntui-ui-color-primary"><</span>
+						<span class="ntui-ui-color-primary">/span></span>
+						<br>
+						<span class="ntui-ui-color-primary"><span><</span>/headerBar<span>></span></span>
+					</div>
+					<div style="padding-left: 24px;">
+						<span class="ntui-ui-color-primary"><span><</span>mainMenu<span>></span></span>
+						<br>
+						<div style="padding-left: 24px;">
+							<span class="ntui-ui-color-primary"><span><</span>menuItem</span> id=<span class="ntui-ui-color-accent">"item1"</span> state=<span class="ntui-ui-color-accent">"auto"</span> href=<span class="ntui-ui-color-accent">"#"</span> onclick=
+							<span class="ntui-ui-color-accent">"myFunction();"</span><span class="ntui-ui-color-primary">></span>
+							<br>
+							<span style="padding-left: 24px;"><span>$</span>{MY_ITEM}</span>
+							<br>
+							<span class="ntui-ui-color-primary"><span><</span>/menuItem<span>></span></span>
+						</div>
+						<span class="ntui-ui-color-primary"><span><</span>/mainMenu<span>></span></span>
+						<br>
+						<span class="ntui-ui-color-primary"><span><</span>pageContent<span>></span></span>
+						<br>
+						<span style="padding-left: 24px;"><span class="ntui-ui-color-primary"><</span><span class="ntui-ui-color-primary">span</span> class=<span class="ntui-ui-color-accent">"ntui-ui-color-accent"</span><span class="ntui-ui-color-primary">></span>Hello
+						world!
+						<span class="ntui-ui-color-primary"><</span><span class="ntui-ui-color-primary">/span></span></span>
+						<br>
+						<span class="ntui-ui-color-primary"><span><</span>/pageContent<span>></span></span>
+						<br>
+						<span class="ntui-ui-color-primary"><span><</span>pageFooter<span>></span></span>
+						<br>
+						<span style="padding-left: 24px;">Copyright © 2017 <span>$</span>{COMPANY_NAME}</span>
+						<br>
+						<span class="ntui-ui-color-primary"><span><</span>/pageFooter<span>></span></span>
+					</div>
+					<span class="ntui-ui-color-primary"><span><</span>/body<span>></span></span>
+					<br>
+					<span class="ntui-ui-color-primary"><span><</span>script<span>></span></span>
+					<br>
+					<div style="padding-left: 24px;">
+						<span class="ntui-ui-color-primary">var</span> SITE_TITLE = <span class="ntui-ui-color-accent">"mySite"</span>;
+						<br>
+						<span class="ntui-ui-color-primary">var</span> MY_ITEM = <span class="ntui-ui-color-accent">"menuItem1"</span>;
+						<br>
+						<span class="ntui-ui-color-primary">var</span> COMPANY_NAME = <span class="ntui-ui-color-accent">"myCompany"</span>;
+						<br>
+						<span class="ntui-ui-color-primary">function</span> <span class="ntui-ui-color-accent">myFunction</span>(){
+						<br>
+						<span style="padding-left:24px;">ntui.ui.dialogs.<span class="ntui-ui-color-accent">prompt</span>(<span class="ntui-ui-color-primary">'This is a dialog :)'</span>,
+						<span class="ntui-ui-color-primary">'A dialog'</span>);</span>
+						<br> }
+						<br>
+						<span class="ntui-ui-color-accent">ntui</span>();
+					</div>
+					<span class="ntui-ui-color-primary"><span><</span>/script<span>></span></span>
+				</div>
+				<span class="ntui-ui-color-primary"><span><</span>/html<span>></span></span>
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">NtUI</span>
+			<br>
+			<div class="code-box">
+				<span class="ntui-ui-color-primary">ntui</span>(<span class="ntui-ui-color-accent">theme</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Initializes NtUI framework, optionally loading a custom theme.</span>
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Ready / onload</span>
+			<br>
+			<div class="code-box">
+				ntui.<span class="ntui-ui-color-primary">ready</span> = <span class="ntui-ui-color-accent">function</span>() {
+				<br>
+				<span class="ntui-ui-color-primary-dark" style="padding-left: 24px;">//code...</span>
+				<br> };
+				<br>
+				<br> ntui.<span class="ntui-ui-color-primary">onload</span> = <span class="ntui-ui-color-accent">function</span>() {
+				<br>
+				<span class="ntui-ui-color-primary-dark" style="padding-left: 24px;">//code...</span>
+				<br> };
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Paths</span>
+			<br>
+			<div class="code-box">
+				ntui.paths.root
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Returns "NtUI.js" root folder.</span>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Requires the use of original framework filename.</span>
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Create element</span>
+			<br>
+			<div class="code-box">
+				ntui.<span class="ntui-ui-color-primary">createElement</span>(<span class="ntui-ui-color-accent">tag</span>, <span class="ntui-ui-color-accent">{attributes}</span>,
+				<span class="ntui-ui-color-accent">innerHTML</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Example usage</span>
+				<br>
+				<span class="ntui-ui-color-accent">var</span> myElement = ntui.<span class="ntui-ui-color-primary">createElement</span>(
+				<br>
+				<div style="padding-left: 24px;">
+					<span class="ntui-ui-color-accent">"div"</span>,
+					<br>{
+					<br>
+					<span style="padding-left: 24px;">class:</span><span class="ntui-ui-color-accent">"myObject"</span>,
+					<br>
+					<span style="padding-left: 24px;">style:</span><span class="ntui-ui-color-accent">"background: #000000;"</span>
+					<br>},
+					<br>
+					<span class="ntui-ui-color-accent">"This is my DOM object with dynamic javascript {myVar + 'string'}"</span>
+				</div>
+				);
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Render</span>
+			<br>
+			<div class="code-box">
+				ntui.<span class="ntui-ui-color-primary">render</span>(<span class="ntui-ui-color-accent">element</span>, <span class="ntui-ui-color-accent">target</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Example usage</span>
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Indexing and rendering elements</span>
+				<br> ntui.<span class="ntui-ui-color-primary">render</span>(myElement, document.<span class="ntui-ui-color-accent">body</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Rendering/updating all indexed elements</span>
+				<br> ntui.<span class="ntui-ui-color-primary">render</span>();
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">CSS</span>
+			<br>
+			<div class="code-box">
+				<span class="ntui-ui-color-primary-dark">//Raw CSS manipulation</span><br> ntui.
+				<span class="ntui-ui-color-primary">css</span>(<span class="ntui-ui-color-accent">'body{background:#000000;}.myClass{color:#FF0000;}'</span>);
+				<br><br><br>
+				<span class="ntui-ui-color-primary-dark">/* CSS Classes manipulation (.class) */</span>
+				<br><br><br>
+				<span class="ntui-ui-color-primary-dark">//Creates a new CSS class with optional raw CSS properties.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">newClass</span>(<span class="ntui-ui-color-accent">className</span>, <span class="ntui-ui-color-accent">css</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Replace all CSS properties of specified class with new raw CSS properties.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">setClass</span>(<span class="ntui-ui-color-accent">className</span>, <span class="ntui-ui-color-accent">css</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Add new raw CSS properties to the specified class without replacing.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">addToClass</span>(<span class="ntui-ui-color-accent">className</span>, <span class="ntui-ui-color-accent">css</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Sets an individual CSS property to the specified class.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">setToClass</span>(<span class="ntui-ui-color-accent">className</span>, <span class="ntui-ui-color-accent">property</span>,
+				<span class="ntui-ui-color-accent">css</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Gets a property value (css) from the specified class.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">getFromClass</span>(<span class="ntui-ui-color-accent">className</span>, <span class="ntui-ui-color-accent">property</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Removes a property from the specified class.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">removeFromClass</span>(<span class="ntui-ui-color-accent">className</span>,
+				<span class="ntui-ui-color-accent">property</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Creates a new CSS object with optional raw CSS properties.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">newObject</span>(<span class="ntui-ui-color-accent">elementID</span>, <span class="ntui-ui-color-accent">css</span>);
+				<br><br><br>
+				<span class="ntui-ui-color-primary-dark">/* CSS Objects manipulation (#object) */</span>
+				<br><br><br>
+				<span class="ntui-ui-color-primary-dark">//Replace all CSS properties of specified object with new raw CSS properties.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">setObject</span>(<span class="ntui-ui-color-accent">elementID</span>, <span class="ntui-ui-color-accent">css</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Add new raw CSS properties to the specified object without replacing.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">addToObject</span>(<span class="ntui-ui-color-accent">elementID</span>, <span class="ntui-ui-color-accent">css</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Sets an individual CSS property to the specified object.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">setToObject</span>(<span class="ntui-ui-color-accent">elementID</span>, <span class="ntui-ui-color-accent">property</span>,
+				<span class="ntui-ui-color-accent">css</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Gets a property value (css) from the specified object.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">getFromObject</span>(<span class="ntui-ui-color-accent">elementID</span>, <span class="ntui-ui-color-accent">property</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Removes a property from the specified object.</span>
+				<br> ntui.css.
+				<span class="ntui-ui-color-primary">removeFromObject</span>(<span class="ntui-ui-color-accent">elementID</span>,
+				<span class="ntui-ui-color-accent">property</span>);
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Platform</span>
+			<br>
+			<div class="code-box">
+				ntui.platform
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Returns auto detected platform "desktop" or "mobile".</span>
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">UI Components</span>
+			<br>
+			<div class="code-box">
+				<span class="ntui-ui-color-primary-dark">//Returns DOM element of specified ui component.</span>
+				<br>
+				<br> ntui.ui.components.window
+				<br> ntui.ui.components.headerbar
+				<br> ntui.ui.components.mainmenu
+				<br> ntui.ui.components.pagecontents
+				<br> ntui.ui.components.pagefooter
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Main menu</span>
+			<br>
+			<div class="code-box">
+				<span class="ntui-ui-color-primary-dark">//Adds a menu item, options is the same as HTML attributes.</span>
+				<br> ntui.ui.mainmenu.
+				<span class="ntui-ui-color-primary">addItem</span>(<span class="ntui-ui-color-accent">label</span>, <span class="ntui-ui-color-accent">{options}</span>);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Example:</span>
+				<br> ntui.ui.mainmenu.
+				<span class="ntui-ui-color-primary">addItem</span>(<br>
+				<div style="padding-left: 24px;">
+					<span class="ntui-ui-color-accent">'myButton'</span>,<br> {
+					<br>
+					<span style="padding-left: 24px;">onclick:<span class="ntui-ui-color-accent">'myFn();'</span></span>,<br>
+					<span style="padding-left: 24px;">href:<span class="ntui-ui-color-accent">'#'</span></span>,<br>
+					<span style="padding-left: 24px;">state:<span class="ntui-ui-color-accent">'auto'</span></span>,<br> }
+				</div>
+				);
+				<br><br>
+				<span class="ntui-ui-color-primary-dark">//Toggle the state of menu items.</span>
+				<br> ntui.ui.mainmenu.
+				<span class="ntui-ui-color-primary">toggleItem</span>(<span class="ntui-ui-color-accent">itemID</span>);
+				<br>
+				<br>
+			</div>
+			<br><br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Update</span>
+			<br>
+			<div class="code-box">
+				ntui.ui.<span class="ntui-ui-color-primary">update</span>();
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Recalculate the positions of UI components, normally is not necessary.</span>
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Theme</span>
+			<br>
+			<div class="code-box">
+				<span class="ntui-ui-color-primary-dark">//Load a theme for NtUI.</span>
+				<br> ntui.ui.<span class="ntui-ui-color-primary">theme</span>(<span class="ntui-ui-color-accent">theme</span>, <span class="ntui-ui-color-accent">path</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Get theme properties (CSS variables).</span>
+				<br> ntui.ui.theme.<span class="ntui-ui-color-primary">getProperty</span>(<span class="ntui-ui-color-accent">'--color-primary'</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Set theme properties (CSS variables).</span>
+				<br> ntui.ui.theme.<span class="ntui-ui-color-primary">setProperty</span>(<span class="ntui-ui-color-accent">'--color-primary'</span>,
+				<span class="ntui-ui-color-accent">'#000000'</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Create theme properties (CSS variables).</span>
+				<br> ntui.ui.theme.<span class="ntui-ui-color-primary">newProperty</span>(<span class="ntui-ui-color-accent">'--myColor'</span>,
+				<span class="ntui-ui-color-accent">'#FFFFFF'</span>);
+				<br>
+				<br>
+				<div class="ntui-ui-color-primary-dark">
+					//You can access to colors from HTML class too (default theme), example:
+					<br>
+					<br> class="ntui-ui-color-primary"
+					<br> class="ntui-ui-background-primary"
+					<br> class="ntui-ui-color-primary-dark"
+					<br> class="ntui-ui-background-primary-dark"
+					<br> class="ntui-ui-color-primary-accent"
+					<br> class="ntui-ui-background-accent"
+				</div>
+			</div>
+			<br>
+			<br>
+			<span class="ntui-ui-color-accent" style="font-weight: 500;text-transform: uppercase;">Dialogs</span>
+			<br>
+			<div class="code-box">
+				<span class="ntui-ui-color-primary-dark">//Shows a prompt dialog.</span>
+				<br> ntui.dialogs.<span class="ntui-ui-color-primary">prompt</span>(<span class="ntui-ui-color-accent">msg</span>,
+				<span class="ntui-ui-color-accent">title</span>, <span class="ntui-ui-color-accent">button</span>, <span class="ntui-ui-color-accent">onclick</span>,
+				<span class="ntui-ui-color-accent">onshow</span>);
+				<br>
+				<br>
+				<span class="ntui-ui-color-primary-dark">//Close a prompt dialog.</span>
+				<br> ntui.dialogs.<span class="ntui-ui-color-primary">close</span>(<span class="ntui-ui-color-accent">onclose</span>);
+			</div>
+		</pageContent>
+		<pageFooter>
+			${ntui.info}
+		</pageFooter>
+	</body>
+	<script>
+		ntui();
+	</script>
+
+	</html>

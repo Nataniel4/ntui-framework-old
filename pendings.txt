@@ -1,0 +1,21 @@
+add to docs
+
+layout
+
+init args (layout, theme)
+
+load(html)
+
+ntui.ui.layout(layout.html,script:false)
+layout.html + layout.js
+ntui(layout,theme)
+ntui.load(target:var/object,html:file)
+ntui.ui.update.watchdog (.start(sensivity) .stop)
+
+update theme, ntui.ui.theme("path/theme":folder)
+
+ntui.onload = ntui.ui.layout(initlayout callback)
+
+ntui.ui.events{onUpdate, onMobile, onDesktop}
+
+ntui.load(target,file,callback())
